@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,6 +59,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SDIO_CD_Pin GPIO_PIN_15
+#define SDIO_CD_GPIO_Port GPIOC
+#define VecNAV_TX_Pin GPIO_PIN_0
+#define VecNAV_TX_GPIO_Port GPIOA
+#define VecNAV_RX_Pin GPIO_PIN_1
+#define VecNAV_RX_GPIO_Port GPIOA
+#define Pump_PWM_Pin GPIO_PIN_8
+#define Pump_PWM_GPIO_Port GPIOA
+#define Fan_PWM_Pin GPIO_PIN_15
+#define Fan_PWM_GPIO_Port GPIOA
+#define Pulse_Sensor_Pin GPIO_PIN_4
+#define Pulse_Sensor_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
