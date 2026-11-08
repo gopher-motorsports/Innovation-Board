@@ -59,18 +59,38 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SDIO_CD_Pin GPIO_PIN_15
-#define SDIO_CD_GPIO_Port GPIOC
+#define SNS_5V_FLT_Pin GPIO_PIN_2
+#define SNS_5V_FLT_GPIO_Port GPIOC
+#define SNS_5V_EN_Pin GPIO_PIN_3
+#define SNS_5V_EN_GPIO_Port GPIOC
 #define VecNAV_TX_Pin GPIO_PIN_0
 #define VecNAV_TX_GPIO_Port GPIOA
 #define VecNAV_RX_Pin GPIO_PIN_1
 #define VecNAV_RX_GPIO_Port GPIOA
-#define Pump_PWM_Pin GPIO_PIN_8
+#define Pulse_Sensor_Pin GPIO_PIN_6
+#define Pulse_Sensor_GPIO_Port GPIOA
+#define Pump_PWM_Pin GPIO_PIN_7
 #define Pump_PWM_GPIO_Port GPIOA
-#define Fan_PWM_Pin GPIO_PIN_15
-#define Fan_PWM_GPIO_Port GPIOA
-#define Pulse_Sensor_Pin GPIO_PIN_4
-#define Pulse_Sensor_GPIO_Port GPIOB
+#define Lamp_Signal_Pin GPIO_PIN_4
+#define Lamp_Signal_GPIO_Port GPIOC
+#define eFuseIn_Pin GPIO_PIN_5
+#define eFuseIn_GPIO_Port GPIOC
+#define CurrentSense_Pin GPIO_PIN_0
+#define CurrentSense_GPIO_Port GPIOB
+#define DiagEn_Pin GPIO_PIN_1
+#define DiagEn_GPIO_Port GPIOB
+#define Fan_PWM_Pin GPIO_PIN_10
+#define Fan_PWM_GPIO_Port GPIOB
+#define RTM_EN_MCU_Pin GPIO_PIN_14
+#define RTM_EN_MCU_GPIO_Port GPIOB
+#define GSense_Pin GPIO_PIN_4
+#define GSense_GPIO_Port GPIOB
+#define HBeat_Pin GPIO_PIN_5
+#define HBeat_GPIO_Port GPIOB
+#define Lamp_LED_Pin GPIO_PIN_8
+#define Lamp_LED_GPIO_Port GPIOB
+#define RTM_EN_LED_Pin GPIO_PIN_9
+#define RTM_EN_LED_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
