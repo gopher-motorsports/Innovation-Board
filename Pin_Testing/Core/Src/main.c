@@ -128,6 +128,7 @@ int main(void)
   MX_TIM13_Init();
   /* USER CODE BEGIN 2 */
   unsigned int last_led = 0;
+  HAL_GPIO_WritePin(eFuseIn_GPIO_Port, eFuseIn_Pin, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
