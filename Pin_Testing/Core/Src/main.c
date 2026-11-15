@@ -60,7 +60,7 @@ UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+volatile uint8_t eFuseEnable = 1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -131,7 +131,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
   unsigned int last_led = 0;
   uint16_t last_eFuse = 0;
-
   initeFuseTask();
   HAL_GPIO_WritePin(eFuseIn_GPIO_Port, eFuseIn_Pin, 1);
   HAL_GPIO_WritePin(DiagEn_GPIO_Port, DiagEn_Pin, 1);
@@ -150,6 +149,7 @@ int main(void)
 
 	  if(now - last_eFuse >= EFUSE_TASK_PERIOD_MS){
 		  last_eFuse = now;
+		  HAL_GPIO_WritePin(eFuseIn_GPIO_Port, eFuseIn_Pin, eFuseEnable);
 		  eFuseTask();
 	  }
     /* USER CODE END WHILE */
