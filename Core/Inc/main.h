@@ -67,6 +67,14 @@ void Error_Handler(void);
 #define VecNAV_TX_GPIO_Port GPIOA
 #define VecNAV_RX_Pin GPIO_PIN_1
 #define VecNAV_RX_GPIO_Port GPIOA
+#define Sensor_1_Pin GPIO_PIN_2
+#define Sensor_1_GPIO_Port GPIOA
+#define Sensor_2_Pin GPIO_PIN_3
+#define Sensor_2_GPIO_Port GPIOA
+#define Sensor_3_Pin GPIO_PIN_4
+#define Sensor_3_GPIO_Port GPIOA
+#define Sensor_4_Pin GPIO_PIN_5
+#define Sensor_4_GPIO_Port GPIOA
 #define Pulse_Sensor_Pin GPIO_PIN_6
 #define Pulse_Sensor_GPIO_Port GPIOA
 #define Pump_PWM_Pin GPIO_PIN_7
@@ -83,6 +91,10 @@ void Error_Handler(void);
 #define Fan_PWM_GPIO_Port GPIOB
 #define RTM_EN_MCU_Pin GPIO_PIN_14
 #define RTM_EN_MCU_GPIO_Port GPIOB
+#define Debug_TX_Pin GPIO_PIN_9
+#define Debug_TX_GPIO_Port GPIOA
+#define Debug_RX_Pin GPIO_PIN_10
+#define Debug_RX_GPIO_Port GPIOA
 #define GSense_Pin GPIO_PIN_4
 #define GSense_GPIO_Port GPIOB
 #define HBeat_Pin GPIO_PIN_5

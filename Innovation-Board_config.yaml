@@ -1,0 +1,29 @@
+module_name: "fvc"
+
+# NOTE: Frequencies will be converted to an integer number of ms for a delay
+
+buckets:
+    high_frequency_fvc:
+        frequency_hz: 250
+        parameters:
+            fvcPedalPosition1_mm: #connector pin 19, mcu pin 21
+                ADC: ADC1_IN2
+                sensor: linear_pos_sensor_25 #linear_pos_sensor_25
+                samples_buffered: 1
+            fvcPedalPosition2_mm: #connector pin 20, mcu pin 22
+                ADC: ADC1_IN3
+                sensor: linear_pos_sensor_25
+                samples_buffered: 1
+            fvcShockPosFrontLeft_mm:
+                ADC: ADC1_IN4
+                sensor: linear_pos_sensor_50
+                samples_buffered: 1
+            fvcShockPosFrontRight_mm:
+                ADC: ADC1_IN5
+                sensor: linear_pos_sensor_50
+                samples_buffered: 1
+            rvcCurrentSensor_A:
+                ADC: ADC1_IN8
+                sensor: current_sensor_1
+                samples_buffered: 1
+                
