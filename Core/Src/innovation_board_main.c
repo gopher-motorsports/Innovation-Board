@@ -12,36 +12,23 @@
 #include "main.h"
 #include "innovation_board_main.h"
 
-//GopherLibraries
+// Gopher Libraries
 #include "gopher_sense.h"
 #include "GopherCAN.h"
 
-//HAL Files
+// HAL Files
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_tim.h"
 
 
-//CAN_HandleTypeDef* hcan;
+// CAN Handles;
 CAN_HandleTypeDef* CAN_bus1;
 CAN_HandleTypeDef* CAN_bus2;
 
-
-
+// Macros
 #define HBEAT_LED_DELAY_TIME_ms 500
-#define RTD_DEBOUNCE_TIME_ms 25
 
-// Initialization code goes here
-
-//void init(CAN_HandleTypeDef* hcan_ptr) {
-//	hcan = hcan_ptr;
-//	//init_can(&hcan1, GCAN0);
-//	//init_can(&hcan2, GCAN1);
-//
-//	init_can(hcan, GCAN0);
-//}
-float motor_temp = 0;
-
-//private function Prototypes
+// Private function Prototypes
 void toggle_hbeat();
 
 void init_inno_board(CAN_HandleTypeDef* hcan_ptr_0, CAN_HandleTypeDef* hcan_ptr_1){
