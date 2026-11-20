@@ -47,7 +47,6 @@ void main_loop() {
 
 void can_buffer_handling_loop()
 {
-	service_can_rx_buffer();
 	service_can_tx(CAN_bus1);
 	service_can_tx(CAN_bus2);
 	service_can_rx_buffer();
