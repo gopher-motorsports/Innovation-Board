@@ -1,6 +1,6 @@
 Core/gophercan-lib/GopherCAN_network.o: \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN_network.c \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN_network.h \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN_network.c \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN_network.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -53,7 +53,7 @@ Core/gophercan-lib/GopherCAN_network.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN_network.h:
+C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN_network.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:

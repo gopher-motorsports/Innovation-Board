@@ -1,8 +1,8 @@
 Core/Gopher_Sense/Build/sensors.o: \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/Gopher_Sense/Build/sensors.c \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/Gopher_Sense/Build/sensors.h \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/Gopher_Sense/lib/gsense_structs.h \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN.h \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/Build/sensors.c \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/Build/sensors.h \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/gsense_structs.h \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN.h \
  ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -37,7 +37,7 @@ Core/Gopher_Sense/Build/sensors.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN_network.h \
+ C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN_network.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -56,9 +56,9 @@ Core/Gopher_Sense/Build/sensors.o: \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
  ../Core/Inc/GopherCAN_config.h
-C:/Users/chris/STM32CubeIDE/workspace_1.10.1/Gopher_Sense/Build/sensors.h:
-C:/Users/chris/STM32CubeIDE/workspace_1.10.1/Gopher_Sense/lib/gsense_structs.h:
-C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN.h:
+C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/Build/sensors.h:
+C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/gsense_structs.h:
+C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -94,7 +94,7 @@ C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-C:/Users/chris/STM32CubeIDE/workspace_1.10.1/gophercan-lib/GopherCAN_network.h:
+C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/gophercan-lib/GopherCAN_network.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:

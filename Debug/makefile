@@ -68,8 +68,8 @@ all:
 main-build: Innovation-Board.elf secondary-outputs
 
 # Tool invocations
-Innovation-Board.elf Innovation-Board.map: $(OBJS) $(USER_OBJS) C:\Users\chris\STM32CubeIDE\workspace_1.10.1\Innovation-Board\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Innovation-Board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\chris\STM32CubeIDE\workspace_1.10.1\Innovation-Board\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Innovation-Board.map" -Wl,--gc-sections -static -z noexecstack --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Innovation-Board.elf Innovation-Board.map: $(OBJS) $(USER_OBJS) C:\Users\chrisdixon\STM32CubeIDE\FSAE_Workspace\Innovation-Board\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Innovation-Board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\chrisdixon\STM32CubeIDE\FSAE_Workspace\Innovation-Board\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Innovation-Board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
