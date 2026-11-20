@@ -1,4 +1,0 @@
-../Core/Src/innovation_board_main.c:34:6:init_inno_board	1
-../Core/Src/innovation_board_main.c:42:6:main_loop	1
-../Core/Src/innovation_board_main.c:48:6:can_buffer_handling_loop	1
-../Core/Src/innovation_board_main.c:56:6:toggle_hbeat	2

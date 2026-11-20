@@ -1,6 +1,0 @@
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:48:5:setup_pulse_sensor_vss_freq	40	static
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:136:5:setup_pulse_sensor	56	static
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:161:5:setup_pulse_sensor_vss	56	static
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:190:5:check_pulse_sensors	16	static
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:203:5:evaluate_pulse_sensor	96	static
-C:/Users/chrisdixon/STM32CubeIDE/FSAE_Workspace/Gopher_Sense/lib/pulse_sensor.c:444:14:convert_delta_time_to_frequency	24	static
