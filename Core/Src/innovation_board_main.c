@@ -64,5 +64,19 @@ void toggle_hbeat(){
 
 
 void update_tssi() {
-	//add lamp test here
+	// EV.6.7 lamp test
+	if(HAL_GPIO_ReadPin(Lamp_Signal_GPIO_Port, Lamp_Signal_Pin) == GPIO_PIN_SET) {
+   		HAL_GPIO_WritePin(TSSI_RED_GPIO_Port, TSSI_RED_Pin, 1);
+    	HAL_GPIO_WritePin(TSSI_GREEN_GPIO_Port, TSSI_GREEN_Pin, 1);
+    return;
+	}
+	
+	if(HAL_GetTick() > TSSI_RESET_TIME_ms && (imdFault_state.data || bmsFault_state.data)) {
+		HAL_GPIO_WritePin(TSSI_GREEN_GPIO_Port, TSSI_GREEN_Pin, 0);
+		HAL_GPIO_WritePin(TSSI_RED_GPIO_Port, TSSI_RED_Pin, (HAL_GetTick() % TSSI_FLASH_PERIOD_ms) < TSSI_FLASH_PERIOD_ms / 2);
+	}
+	else{
+		HAL_GPIO_WritePin(TSSI_RED_GPIO_Port, TSSI_RED_Pin, 0);
+		HAL_GPIO_WritePin(TSSI_GREEN_GPIO_Port, TSSI_GREEN_Pin, 1);
+	}
 }
