@@ -62,3 +62,7 @@ void toggle_hbeat(){
 
 }
 
+
+void update_tssi() {
+	//add lamp test here
+}
