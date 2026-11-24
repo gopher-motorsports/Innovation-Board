@@ -12,4 +12,5 @@
 void can_buffer_handling_loop();
 void main_loop();
 void init_inno_board(CAN_HandleTypeDef* hcan_ptr_0, CAN_HandleTypeDef* hcan_ptr_1);
+void update_tssi();
 #endif /* INC_INNOVATION_BOARD_MAIN_H_ */
