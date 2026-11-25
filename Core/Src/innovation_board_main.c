@@ -19,7 +19,8 @@
 // HAL Files
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_tim.h"
-
+#include "pulse_sensor.h"
+int Pulse_sensor_stat;
 
 // CAN Handles;
 CAN_HandleTypeDef* CAN_bus1;
@@ -40,7 +41,7 @@ void init_inno_board(CAN_HandleTypeDef* hcan_ptr_0, CAN_HandleTypeDef* hcan_ptr_
 }
 
 void main_loop() {
-
+	Pulse_sensor_stat = check_pulse_sensors();
 	toggle_hbeat();
 }
 

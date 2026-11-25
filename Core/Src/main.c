@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "GopherCAN.h"
 #include "gopher_sense.h"
+#include "pulse_sensor.h"
 #include "innovation_board_main.h"
 /* USER CODE END Includes */
 
@@ -146,9 +147,22 @@ int main(void)
   init_inno_board(&hcan1, &hcan2);
   gsense_init(&hcan1, &hadc1, NULL, NULL, &htim10, GSense_GPIO_Port, GSense_Pin);
 
+  setup_pulse_sensor_vss(
+        		  &htim3,
+         		  TIM_CHANNEL_1,
+         		  0.0595f,
+         		  &(fvcWheelSpeedFrontLeft_m_per_s.data),
+        		  5000,
+         		  true,
+         		  100,
+         		  1000,
+        		  1,
+        		  64
+           );
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
+
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
 
